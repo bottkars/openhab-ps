@@ -69,12 +69,18 @@ Function Invoke-OpenHABREST
     [OutputType([int])]
     Param(
 	$Method = 'GET',
-	$Function
-
-
+	$Function,
+	$Object_Type
 	)
 
 $result = Invoke-RestMethod -Method $Method -UseBasicParsing -Uri "$env:OpenHAB_baseurl/rest/$Function"
+if ($result.GetType().fullname -match "system.string")
+	{
+	}
+else
+	{
+	$result | Add-Member -TypeName $Object_Type
+	}
 
 Write-Output $result
 }

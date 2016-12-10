@@ -6,7 +6,7 @@ Function Get-HABuuid
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function uuid
+    Invoke-OpenHABREST -Method $My_Method -Function uuid -Object_Type HABuuid
     $MySelf
     }
 
@@ -18,7 +18,7 @@ Function Get-HABchannel_types
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function channel-types
+    Invoke-OpenHABREST -Method $My_Method -Function channel-types -Object_Type HABchannel_types
     $MySelf
     }
 
@@ -30,7 +30,7 @@ Function Get-HABconfig_descriptions
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function config-descriptions
+    Invoke-OpenHABREST -Method $My_Method -Function config-descriptions -Object_Type HABconfig_descriptions
     $MySelf
     }
 
@@ -42,7 +42,7 @@ Function Get-HABbindings
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function bindings
+    Invoke-OpenHABREST -Method $My_Method -Function bindings -Object_Type HABbindings
     $MySelf
     }
 
@@ -54,7 +54,7 @@ Function Get-HABservices
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function services
+    Invoke-OpenHABREST -Method $My_Method -Function services -Object_Type HABservices
     $MySelf
     }
 
@@ -66,7 +66,7 @@ Function Get-HABdiscovery
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function discovery
+    Invoke-OpenHABREST -Method $My_Method -Function discovery -Object_Type HABdiscovery
     $MySelf
     }
 
@@ -78,7 +78,7 @@ Function Get-HABpersistence
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function persistence
+    Invoke-OpenHABREST -Method $My_Method -Function persistence -Object_Type HABpersistence
     $MySelf
     }
 
@@ -90,7 +90,7 @@ Function Get-HABthing_types
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function thing-types
+    Invoke-OpenHABREST -Method $My_Method -Function thing-types -Object_Type HABthing_types
     $MySelf
     }
 
@@ -102,7 +102,7 @@ Function Get-HABitems
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function items
+    Invoke-OpenHABREST -Method $My_Method -Function items -Object_Type HABitems
     $MySelf
     }
 
@@ -114,7 +114,7 @@ Function Get-HABinbox
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function inbox
+    Invoke-OpenHABREST -Method $My_Method -Function inbox -Object_Type HABinbox
     $MySelf
     }
 
@@ -126,7 +126,7 @@ Function Get-HABlinks
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function links
+    Invoke-OpenHABREST -Method $My_Method -Function links -Object_Type HABlinks
     $MySelf
     }
 
@@ -138,7 +138,7 @@ Function Get-HABthings
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function things
+    Invoke-OpenHABREST -Method $My_Method -Function things -Object_Type HABthings
     $MySelf
     }
 
@@ -150,7 +150,7 @@ Function Get-HABsitemaps
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function sitemaps
+    Invoke-OpenHABREST -Method $My_Method -Function sitemaps -Object_Type HABsitemaps
     $MySelf
     }
 
@@ -162,7 +162,7 @@ Function Get-HABiconsets
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function iconsets
+    Invoke-OpenHABREST -Method $My_Method -Function iconsets -Object_Type HABiconsets
     $MySelf
     }
 
@@ -174,7 +174,7 @@ Function Get-HABextensions
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function extensions
+    Invoke-OpenHABREST -Method $My_Method -Function extensions -Object_Type HABextensions
     $MySelf
     }
 
@@ -186,7 +186,7 @@ Function Get-habmincharts
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function habmin/charts
+    Invoke-OpenHABREST -Method $My_Method -Function habmin/charts -Object_Type habmincharts
     $MySelf
     }
 
@@ -198,7 +198,7 @@ Function Get-habmindashboards
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function habmin/dashboards
+    Invoke-OpenHABREST -Method $My_Method -Function habmin/dashboards -Object_Type habmindashboards
     $MySelf
     }
 
@@ -210,7 +210,7 @@ Function Get-habmindesigner
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function habmin/designer
+    Invoke-OpenHABREST -Method $My_Method -Function habmin/designer -Object_Type habmindesigner
     $MySelf
     }
 
@@ -222,7 +222,7 @@ Function Get-habminfloorplan
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function habmin/floorplan
+    Invoke-OpenHABREST -Method $My_Method -Function habmin/floorplan -Object_Type habminfloorplan
     $MySelf
     }
 
@@ -234,7 +234,7 @@ Function Get-habminrules
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function habmin/rules
+    Invoke-OpenHABREST -Method $My_Method -Function habmin/rules -Object_Type habminrules
     $MySelf
     }
 
@@ -246,7 +246,7 @@ Function Get-HABtemplates
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function templates
+    Invoke-OpenHABREST -Method $My_Method -Function templates -Object_Type HABtemplates
     $MySelf
     }
 
@@ -258,7 +258,7 @@ Function Get-HABmodule_types
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function module-types
+    Invoke-OpenHABREST -Method $My_Method -Function module-types -Object_Type HABmodule_types
     $MySelf
     }
 
@@ -270,7 +270,7 @@ Function Get-HABrules
 
     {
     $My_Method = 'GET'
-    Invoke-OpenHABREST -Method $My_Method -Function rules
+    Invoke-OpenHABREST -Method $My_Method -Function rules -Object_Type HABrules
     $MySelf
     }
 
